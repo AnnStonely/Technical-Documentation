@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/style.css" rel="stylesheet">
+    <title>Technical Documentation Page</title>
+  </head>
+
+<div id="div">
+<nav id="navbar">
+  <header> 
+    <strong>HTML for Beginners</strong>
+  </header>
+  <ul id="nav-ul">
+    <li class="list">
+      <a class="nav-link" href="#Introduction">Introduction
+      </a>
+    </li>
+    <li class="list">
+      <a class="nav-link" href="#HTML_Elements">HTML Elements
+      </a>
+    </li>
+    <li class="list">
+      <a class="nav-link" href="#Lorem_Ipsum">
+        Lorem Ipsum
+      </a>
+    </li>
+    <li class="list">
+      <a class="nav-link" href="#Links">
+        Links
+      </a>
+    </li>
+    <li class="list">
+      <a class="nav-link" href="#Source">
+       Source
+      </a>
+  </ul>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+  <header class="header">Introduction</header>
+    <p class="paragraph">
+      HTML is an acronym that is short for "Hyper Text Markup Language". Basically, this is the written language that your internet browser translates into the many different things you see on the internet. It is all based on HTML, including this page you are reading now! The great thing about learning this language is that it uses your current language and the commands are super logical.
+    </p> 
+  <p class="paragraph">
+    In this document I am going to go over the basics that you will need to get started. Please keep in mind this is not a "teaching" document so much as it is a guidline with very little information. That being said, a lot of the things mentioned here will help you know what to search for to get more information.
+    </p>
+  </section>
+  <section class="main-section" id="HTML_Elements">
+    <header class="header">
+      HTML Elements
+    </header> 
+    <p class="paragraph">
+      An HTML Element is a piece or section of your complete page. You can tell an element as it is usually surrounded by a less than and a greater than sign like this-
+     <pre class="pre">
+      <code class="code">
+        &lt;header>
+           </code>
+      </pre>
+      
+      Most Elements need to have an opening "Tag" and a closing "Tag" This dictates where the element begins and ends. You close an element almost the same way you open it, with one key difference-
+    <pre class="pre">
+        <code class="code">
+          &lt;/header>
+      </code>
+      </pre>
+    All of the text that you put between the two "Tags" is what will show up on the viewers screen!
+    </p>
+   <p class="paragraph">
+     Different "Tags" tell the browser what type of content is in between them. Here are some examples.
+     <ul>
+       <li>   
+         <code class="code">&lt;header></code> Tells the browser that this is a "Headline".
+      </li>
+       <li>
+         <code class="code">&lt;p></code> Tells the browser that this is a "Paragraph".
+       </li>
+       <li>
+         <code class="code">&lt;main></code> Is what the browser uses to identify what your page is about. Most of your other "Tags" and content will be "nested" within your "Main" tags.
+  </ul>
+  </section>
+<section class="main-section" id="Lorem_Ipsum">
+  <header class="header">
+    Lorem Ipsum
+  </header>
+  <p class="paragraph">
+    This is one of my favorite things about coding! When I am building a page I like to start with what I call a "Skeleton", the bones of my page if you will. In places I know there will be text later I can use Lorem Ipsum to fill that space so I can get an Idea of how it will look.
+  </p>
+  <p class="paragraph" >
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has been the industry's standard dummy text ever since the 1500s. You can find generators for it online, however, be careful! Some chunks of Lorem Ipsum have been altered to have hidden "funnies" in them. You will want to verify your source or scan any that you use to avoid possible embarrassment. Below is an exapmle of some Lorem Ipsum.
+  </p>
+     <p class="paragraph">
+       <em>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel facilisis felis, in interdum quam. Donec dui augue, sagittis non metus ac, ornare iaculis lectus. Donec ac nisl ac justo ultricies tincidunt. Suspendisse condimentum dui faucibus nibh fermentum accumsan. Pellentesque maximus sollicitudin imperdiet. Quisque fermentum est nisi, sit amet iaculis odio accumsan at. Sed in dapibus justo.</em>
+  </p>
+  </section>
+  <section class="main-section" id="Links">
+    <header class="header">
+      Links
+      </header>
+        <p class="paragraph">
+          Being able to link to another page or even a different section of your page is important to know as well!</p>
+    <p class="paragraph">
+          You can link and image from another page, or you can link a video. You can also link to a source of information such as Wikipedia.
+      <ul>
+        <li>
+      To link an image you use the "img" and "src" tags together. It looks like this 
+      <pre class="pre">
+      <code class="code">
+      &lt;img src="https//www.yourimagesource.com/img.jpg">
+      </code>
+      </pre>
+        </li>
+        <li>
+    You can also create a link that takes a user to a specific section of your page. To do this you use the "a" tag, which stands for anchor. This tag is always used with the "href" attribute, which tells the anchor where it is going. 
+    <pre class="pre">
+    <code class="code">
+    &lt;a href="#introduction">Introduction</a>
+    </code>
+    </pre>
+    </li>
+  The text between the > and the closing "anchor" tag will provide the link that needs to be clicked on. Just remember, internal links to your page use "href" and links to external sources use the "src" tag.
+  </p>
+</section>
+<section class="main-section" id="Source">
+  <header class="header">Source</header>
+     <p class="paragraph">
+      All of the information on this page was learned by me at 
+      <a id="Source" target="_blank" href="https://www.freecodecamp.org/">freecodecamp.org </a>
+    </p>
+    <p class="paragraph">
+      Thank you for taking the time to view my page.
+  </p> 
+</section>
+</main>
+</div>
+</html>
